@@ -12,7 +12,7 @@ return {
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
-    picker = { enabled = true },
+    picker = { enabled = false },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
@@ -22,8 +22,8 @@ return {
       left = { "mark", "sign" }, -- priority of signs on the left (high to low)
       right = { "fold", "git" }, -- priority of signs on the right (high to low)
       folds = {
-        open = false,         -- show open fold icons
-        git_hl = false,       -- use Git Signs hl for fold icons
+        open = false,            -- show open fold icons
+        git_hl = false,          -- use Git Signs hl for fold icons
       },
       git = {
         -- patterns to match Git signs
@@ -36,13 +36,13 @@ return {
     lazygit = { enabled = true },
   },
   keys = {
-    {
-      "<leader><space>",
-      function()
-        Snacks.picker.smart()
-      end,
-      desc = "Find Files",
-    },
+    -- {
+    --   "<leader><space>",
+    --   function()
+    --     Snacks.picker.smart()
+    --   end,
+    --   desc = "Find Files",
+    -- },
     {
       "<leader>,",
       function()
